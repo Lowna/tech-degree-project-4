@@ -1,0 +1,19 @@
+//typography
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web:200,200i,300,300i,400,400i,600,600i,700,700i,900");
+
+.container {
+    font-family: $font-fam;
+    line-height: 1.7;
+    font-size: 16px;
+    color: $txt-color;
+}
+.link {
+    color: $link-color;
+    text-decoration: none;
+}
+.blockquote {
+    color: $primary-color;
+    font-weight: 700;
+    
+    
+}
