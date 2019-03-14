@@ -5,8 +5,8 @@
     .form__input
    */
 .form {
-	padding: 2em;
 	display: flex;
+	
 	flex-direction: column;
 	flex-wrap: wrap;
 }
@@ -14,7 +14,13 @@
 	display: none;
 }
 .form__input {
-	border: none;
-	margin-bottom: 25px;
+	border: 0;
+	outline: 0;
+	background: transparent;
+	border-bottom: 8px solid $primary-color;
+	margin-bottom: 30px;
 	
+	padding-bottom: 30px;
+	font-weight: 700;
+
 }

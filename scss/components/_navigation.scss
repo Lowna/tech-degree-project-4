@@ -1,20 +1,25 @@
 /* Scss Document */
-nav {
-    margin-right: 45px;
-        .nav__item {
+.nav {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.nav__item {
+        
         list-style-type: none;
-        height: 20px;
-        padding:  1em;
-
+        display: block;
+    }
+.nav__item {
         a {
+            display: block;
             text-decoration: none;
-            padding: 1em;
-            color: $font-color-default;
+            padding: .5em;
+            color: $font-color-default; 
         }
         a:hover {
             color: $white;
             background: #58e1c1;
             @include roundy;
         }
-    }
+  
 }
