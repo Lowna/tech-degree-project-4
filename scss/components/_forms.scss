@@ -1,2 +1,20 @@
 /* Scss Document */
-
+/*Forms:
+    .form
+    .form__label--hidden
+    .form__input
+   */
+.form {
+	padding: 2em;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+.form__label--hidden {
+	display: none;
+}
+.form__input {
+	border: none;
+	margin-bottom: 25px;
+	
+}

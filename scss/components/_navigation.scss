@@ -1,20 +1,20 @@
 /* Scss Document */
-.nav__item {
-    list-style-type: none;
-     padding: 1em;
-   a {
-    text-decoration: none;
-     color: $font-color-default;
-     padding: 1em;
-     @include roundy;
-}
-   
-:hover {
-         background: $primary-color;
-         color: $white;
+nav {
+    margin-right: 45px;
+        .nav__item {
+        list-style-type: none;
+        height: 20px;
+        padding:  1em;
 
-         transition: .3s ease-out;
-     }
-     
-
+        a {
+            text-decoration: none;
+            padding: 1em;
+            color: $font-color-default;
+        }
+        a:hover {
+            color: $white;
+            background: #58e1c1;
+            @include roundy;
+        }
+    }
 }
