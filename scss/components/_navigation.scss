@@ -13,7 +13,7 @@
         a {
             display: block;
             text-decoration: none;
-            padding: .5em;
+            padding: 1em;
             color: $font-color-default; 
         }
         a:hover {
@@ -23,3 +23,9 @@
         }
   
 }
+//media queries
+@media (min-width: $break-m){
+ 
+}
+
+    

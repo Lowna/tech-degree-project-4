@@ -9,14 +9,16 @@
 }
 .headline--primary {
 	font-size: 2em;
+	line-height: 1.2;
 	color: $primary-color;
-	
+	margin-left: 1em;
 }
 
 .headline--secondary {
 	font-weight: 200;
 	font-size: 1.25em;
 	text-align: left;
+	margin-left: 15px;
 }
 
 .link {

@@ -9,6 +9,7 @@
 	
 	flex-direction: column;
 	flex-wrap: wrap;
+	justify-content: center;
 }
 .form__label--hidden {
 	display: none;
@@ -18,8 +19,8 @@
 	outline: 0;
 	background: transparent;
 	border-bottom: 8px solid $primary-color;
+	padding-left: 30px;
 	margin-bottom: 30px;
-	
 	padding-bottom: 30px;
 	font-weight: 700;
 

@@ -33,23 +33,36 @@ $grid__col--12: #80e8d1;
 	width: 90%;
 	margin: auto;
 }
+.card {
+	padding: 1em;
+}
 .grid__row {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	text-align: left;
+	margin-bottom: 1.75em;
+}
+@media (min-width: $break-m){
+	.grid__row {
+		flex-direction: row;
+	
+	}
 }
 .grid__col--3 {
 	margin: auto;
+	
 }
+
 .theme__colors {
 	padding: .5em;
-	margin-bottom: 10px;
+	margin-bottom: 6px;
 	border-radius: 5px;
 }
 .theme__colors.grid__col--3 {
 	background-color: $grid__col--3;
-	width: 96%
+	margin: 0;
+	margin-bottom: 6px;
 }
 .theme__colors.grid__col--4 {
 	background-color: $grid__col--4;

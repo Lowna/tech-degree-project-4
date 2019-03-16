@@ -6,7 +6,9 @@
 .btn--info {
     display: block;
     width: 100%;
-     @include btn
+    margin-bottom: 1.3em;
+     @include btn;
+     text-transform: uppercase;
 }
 .btn--default {
     background: $btn-default;
@@ -23,4 +25,9 @@
 .btn--info {
     background: $btn-info;
    
+}
+
+@media (min-width: $break-m){
+
+
 }
