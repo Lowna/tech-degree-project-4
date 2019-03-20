@@ -11,8 +11,10 @@
 @mixin btn {
     border: none;
     @include roundy;
-    padding: 1em;
+    
     color: $white;
+    display: block;
+    width: 100%;
 }
 @mixin form {
 	border: 0;
@@ -23,6 +25,7 @@
 	margin-bottom: 30px;
 	padding-bottom: 30px;
 	font-weight: 700;
+	width: 95%
 }
 // flex container
 @mixin flexy(

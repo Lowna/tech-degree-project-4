@@ -260,33 +260,51 @@ $grid__col--12: #80e8d1;
   margin-bottom: 1.75em;
 }
 
-.card {
-  padding: 1em;
-}
-
 .grid__col--3 {
   margin: auto;
 }
 
 @media (min-width: 768px) {
   .grid__row {
+    display: flex;
     flex-direction: row;
-    justify-content: center;
     margin-top: 1em;
   }
 
   .grid__col--12 {
     display: flex;
+    flex-direction: column;
+    display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-evenly;
   }
 
   .grid__col--3 {
     flex-basis: 25%;
   }
 
+  .grid__col--4 {
+    flex-basis: 33.3333333333%;
+  }
+
+  .grid__col--6 {
+    flex-basis: 50%;
+  }
+  .grid__col--6 .img--avatar {
+    width: 40%;
+    padding: 1em;
+  }
+
+  .grid__col--8 {
+    flex-basis: 66%;
+  }
+
   .grid__col--9 {
     flex-basis: 60%;
+  }
+
+  .grid__col {
+    margin-left: 10px;
   }
 
   .theme__colors.grid__col--3 {
@@ -363,8 +381,9 @@ $grid__col--12: #80e8d1;
   margin-bottom: 1.3em;
   border: none;
   border-radius: 5px;
-  padding: 1em;
   color: #fff;
+  display: block;
+  width: 100%;
   text-transform: uppercase;
 }
 
@@ -389,13 +408,20 @@ $grid__col--12: #80e8d1;
 }
 
 @media (min-width: 768px) {
-  .btn--default,
-.btn--success,
-.btn--error,
-.btn--warning,
-.btn--info {
-    margin-left: 2em;
+  .btn--default.theme__colors,
+.btn--success.theme__colors,
+.btn--error.theme__colors,
+.btn--warning.theme__colors,
+.btn--info.theme__colors {
+    margin: auto;
+    margin-left: 20px;
     padding: 1em 50px;
+    width: 100%;
+  }
+
+  .form .btn--default.theme__colors {
+    margin: 0;
+    padding: 1em 0;
   }
 }
 /* Scss Document */
@@ -422,6 +448,7 @@ $grid__col--12: #80e8d1;
   margin-bottom: 30px;
   padding-bottom: 30px;
   font-weight: 700;
+  width: 95%;
 }
 
 @media (min-width: 768px) {
@@ -429,7 +456,7 @@ $grid__col--12: #80e8d1;
     margin: 0;
     padding: 0;
     margin-top: 35px;
-    margin-right: 1em;
+    flex-basis: 100%;
   }
 }
 /* Scss Document */
@@ -461,6 +488,11 @@ $grid__col--12: #80e8d1;
   .img--logo {
     margin: 0;
     padding: 0;
+  }
+
+  .img--avatar {
+    text-align: center;
+    margin: auto;
   }
 }
 .container {

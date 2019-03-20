@@ -28,13 +28,21 @@
 }
 
 @media (min-width: $break-m){
-    .btn--default,
-    .btn--success,
-    .btn--error,
-    .btn--warning,
-    .btn--info {
-        margin-left: 2em;
+    .btn--default.theme__colors,
+    .btn--success.theme__colors,
+    .btn--error.theme__colors,
+    .btn--warning.theme__colors,
+    .btn--info.theme__colors {
+        margin: auto;
+        margin-left: 20px;
         padding: 1em 50px;
+        width: 100%;
+    }
+    .form {
+        .btn--default.theme__colors {
+        margin: 0;
+        padding: 1em 0;
+        }
     }
 
 }
