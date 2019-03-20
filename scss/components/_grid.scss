@@ -27,15 +27,16 @@ $grid__col--8: #fd9f85;
 $grid__col--12: #80e8d1;
 */
 .container {
+	display: flex;
+	flex-direction: column;
+	width: 90%;
 	margin-left: auto;
 	margin-right: auto;
 	box-sizing: border-box;
-	width: 90%;
+	
 	margin: auto;
 }
-.card {
-	padding: 1em;
-}
+
 .grid__row {
 	display: flex;
 	flex-direction: column;
@@ -43,14 +44,24 @@ $grid__col--12: #80e8d1;
 	text-align: left;
 	margin-bottom: 1.75em;
 }
+.card {
+	padding: 1em;
+
+}
 @media (min-width: $break-m){
 	.grid__row {
 		flex-direction: row;
-	
+		justify-content: center;
+		margin-top: 1em;
+	}
+	.grid__col--12 {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
 	}
 }
-.grid__col--3 {
-	margin: auto;
+.grid__col--4 {
+	flex-grow: 2;
 	
 }
 

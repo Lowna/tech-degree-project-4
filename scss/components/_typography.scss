@@ -38,3 +38,10 @@
     border-radius: 5px;
     
 }
+//media queries
+@media (min-width: $break-m){
+ .grid__col--8 .card {
+   padding-right: 50px;
+   
+ }
+}

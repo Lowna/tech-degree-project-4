@@ -6,7 +6,6 @@
    */
 .form {
 	display: flex;
-	
 	flex-direction: column;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -24,4 +23,13 @@
 	padding-bottom: 30px;
 	font-weight: 700;
 
+}
+//media queries
+@media (min-width: $break-m){
+ .form {
+ 	margin: 0;
+ 	padding: 0;
+ 	margin-top: 35px;
+ 	width: 18.750em; /*approx 400px*/
+ }
 }

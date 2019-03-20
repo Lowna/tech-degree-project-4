@@ -25,7 +25,15 @@
 }
 //media queries
 @media (min-width: $break-m){
- 
+ .nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+   
+ }
+ .nav__item {
+    margin-left: .5em;
+ }
 }
 
     

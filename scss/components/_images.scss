@@ -5,7 +5,9 @@
     //.img--avatar
 .img--logo {
 	margin: 2.25em 0 2.25em 0;
-
+}
+.grid__col--3 .img--logo {
+	display: flex;
 }
 
 .img--avatar {
@@ -32,6 +34,6 @@
 	.img--logo {
 		margin: 0;
 		padding: 0;
-		
+		margin-left: 50px;
 	}
 	}

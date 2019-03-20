@@ -28,6 +28,13 @@
 }
 
 @media (min-width: $break-m){
-
+    .btn--default,
+    .btn--success,
+    .btn--error,
+    .btn--warning,
+    .btn--info {
+        margin-left: 2em;
+        padding: 1em 50px;
+    }
 
 }
