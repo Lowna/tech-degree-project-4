@@ -4,14 +4,12 @@
     //.img--frame
     //.img--avatar
 .img--logo {
-	margin: 2.25em 0 2.25em 0;
+	margin-top: 2.25em;
+	margin-bottom: 2.25em;
 }
-.grid__col--3 .img--logo {
-	display: flex;
-}
-
 .img--avatar {
 	display: block;
+	text-align: center;
 	margin: auto;
 	width: 60%;
 	padding: 2em;
@@ -34,6 +32,6 @@
 	.img--logo {
 		margin: 0;
 		padding: 0;
-		margin-left: 50px;
+		
 	}
 	}

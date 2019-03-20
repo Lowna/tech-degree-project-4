@@ -5,23 +5,13 @@
     .form__input
    */
 .form {
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	justify-content: center;
+	 @include flexy($dir:column);
 }
 .form__label--hidden {
 	display: none;
 }
 .form__input {
-	border: 0;
-	outline: 0;
-	background: transparent;
-	border-bottom: 8px solid $primary-color;
-	padding-left: 30px;
-	margin-bottom: 30px;
-	padding-bottom: 30px;
-	font-weight: 700;
+	@include form;
 
 }
 //media queries
@@ -30,6 +20,6 @@
  	margin: 0;
  	padding: 0;
  	margin-top: 35px;
- 	width: 18.750em; /*approx 400px*/
+ 	margin-right: 1em;
  }
 }
