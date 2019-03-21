@@ -1,4 +1,6 @@
 //mixins
+//for buttons and centering
+////////////////////////////////////////////////////
 @mixin roundy {
     border-radius: 5px;
 }
@@ -19,6 +21,8 @@
     margin-bottom: 1.3em;
     text-transform: uppercase;
 }
+//for images and avatars
+////////////////////////////////////////////////////
 @mixin pictureFrame {
 	display: block;
 	margin: auto;
@@ -40,6 +44,8 @@
 	margin: auto;
 	}	
 }
+//for form creation
+////////////////////////////////////////////////////
 @mixin form {
 	border: 0;
 	outline: 0;
@@ -51,7 +57,8 @@
 	font-weight: 700;
 	width: 95%
 }
-// flex container
+//flexbox
+////////////////////////////////////////////////////
 @mixin flexy(
 $disp: flex,
 $dir: null,
@@ -63,18 +70,3 @@ $just: null) {
 	justify-content: $just;
 }
 
-// media queries
-@mixin mq($break) {
-	$value: map-get($breakpoints, $break);
-	$sm: map-get($breakpoints, 'sm');
-	@if $value < $sm {
-		@media (max-width: $value){
-			@content;
-		}
-	}
- @else {
-		@media (min-width: $value){
-			@content;
-		}
-	}
-}

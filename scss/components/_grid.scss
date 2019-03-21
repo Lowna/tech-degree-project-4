@@ -42,6 +42,8 @@ $grid__col--12: #80e8d1;
 		margin-top: 1em;
 		}
 }
+//for loop for the gutter
+//////////////////////////////////////////////////
 @for $i from 1 through 12 {
 	.grid__col--#{$i} {
 		@media (min-width: $break-m){
@@ -49,6 +51,7 @@ $grid__col--12: #80e8d1;
 		}
 	}
 }
+/////////////////////////////////////////////////////
 .grid__col--3 {
 	margin: auto;
 	@media (min-width: $break-m){
