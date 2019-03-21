@@ -9,12 +9,18 @@ $txt-color: #5a5a5a;
 $link-color: #52ddfc;
 
 $blockquote: #808080;
+
 //button colors
 $btn-default: #51ddfc;
+$btn-default-comp: complement($btn-default);
 $btn-success: #63cc82;
+$btn-success-comp: complement($btn-success);
 $btn-error: #e4757a;
+$btn-error-comp: complement($btn-error);
 $btn-warning: #fd7856;
+$btn-warning-comp: complement($btn-warning);
 $btn-info: #927bc1;
+$btn-info-comp: complement($btn-info);
 
 // grid colors
 $grid__col--3: #deb2ee;
@@ -25,11 +31,13 @@ $grid__col--7: #ec9fa3;
 $grid__col--8: #fd9f85;
 $grid__col--12: #80e8d1;
 
+
 //fonts
 
 $font-fam: 'Titillium Web', sans-serif;
 
 // layout
+
 $max-width: 1000px;
 
 //breakpoints
@@ -37,3 +45,9 @@ $break-xs: 575px;
 $break-s: 576px;
 $break-m: 768px;
 $break-lg: 992px;
+$breakpoints: (
+		'xs': 575px,
+		'sm': 576px,
+		'med': 768px,
+		'lg': 992px,
+);

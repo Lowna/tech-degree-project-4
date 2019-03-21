@@ -37,22 +37,75 @@ $grid__col--12: #80e8d1;
 	justify-content: center;
 	text-align: left;
 	margin-bottom: 1.75em;
-}
-
-.grid__col--3 {
-	margin: auto;
-}
-@media (min-width: $break-m){
-	.grid__row {
+	@media (min-width: $break-m){
 		@include flexy($dir:row);
 		margin-top: 1em;
+		}
+}
+@for $i from 1 through 12 {
+	.grid__col--#{$i} {
+		@media (min-width: $break-m){
+	  			margin-right: 10px !important;
+		}
 	}
+}
+.grid__col--3 {
+	margin: auto;
+	@media (min-width: $break-m){
+	flex-basis: 50%;
+	}
+}
+.theme__colors {
+	padding: .5em;
+	margin-bottom: 6px;
+	border-radius: 5px;
+}
+.theme__colors.grid__col--3 {
+	background-color: $grid__col--3;
+	margin: 0;
+	margin-bottom: 6px;
+}
+.theme__colors.grid__col--4 {
+	background-color: $grid__col--4;
+	@media (min-width: $break-m){
+		flex-basis: 75%;
+	}
+}
+.theme__colors.grid__col--5 {
+	background-color: $grid__col--5;
+	@media (min-width: $break-m){
+		flex-basis: 35%;
+	}
+}
+.theme__colors.grid__col--6 {
+	background-color: $grid__col--6;
+	@media (min-width: $break-m){
+		flex-basis: 50%;
+	}
+}
+.theme__colors.grid__col--7 {
+	background-color: $grid__col--7;
+	@media (min-width: $break-m){
+		flex-basis: 65%;
+	}
+}
+.theme__colors.grid__col--8 {
+	background-color: $grid__col--8;
+	@media (min-width: $break-m){
+		flex-basis: 75%;
+	}
+}
+.theme__colors.grid__col--12 {
+	background-color: $grid__col--12;
+	@media (min-width: $break-m){
+		flex-basis: 100%;
+	}
+}
+
+@media (min-width: $break-m){
 	.grid__col--12 {
 	 @include flexy($dir:column);
 	 @include flexy($dir:row,$just:space-evenly);
-	}
-	.grid__col--3 {
-	flex-basis: 25%;
 	}
 	.grid__col--4 {
 	flex-basis: 33.3333333333%;
@@ -66,66 +119,12 @@ $grid__col--12: #80e8d1;
 	} 
 	.grid__col--8 {
 	flex-basis: 66%;
+	@media (min-width: $break-m){
+    	padding-right: 50px;
+    }
 	} 
 	.grid__col--9 {
 		flex-basis: 60%;
 	} 
-	.grid__col {
-	margin-left: 10px;
-	}
-	.theme__colors.grid__col--3 {
-		margin-right: 10px;
-	}
-	.theme__colors.grid__col--4 {
-		flex-basis: 75%;
-		
-	}
-	.theme__colors.grid__col--5 {
-		flex-basis: 35%;
-		
-	}
-	.theme__colors.grid__col--6 {
-		flex-basis: 50%;
-		
-	}
-	.theme__colors.grid__col--7 {
-		flex-basis: 65%;
-		}
-	.theme__colors.grid__col--8 {
-		flex-basis: 75%;
-		
-	}
-	.theme__colors.grid__col--12 {
-		flex-basis: 100%;
-	}
 }
 
-
-.theme__colors {
-	padding: .5em;
-	margin-bottom: 6px;
-	border-radius: 5px;
-}
-.theme__colors.grid__col--3 {
-	background-color: $grid__col--3;
-	margin: 0;
-	margin-bottom: 6px;
-}
-.theme__colors.grid__col--4 {
-	background-color: $grid__col--4;
-}
-.theme__colors.grid__col--5 {
-	background-color: $grid__col--5;
-}
-.theme__colors.grid__col--6 {
-	background-color: $grid__col--6;
-}
-.theme__colors.grid__col--7 {
-	background-color: $grid__col--7;
-}
-.theme__colors.grid__col--8 {
-	background-color: $grid__col--8;
-}
-.theme__colors.grid__col--12 {
-	background-color: $grid__col--12;
-}

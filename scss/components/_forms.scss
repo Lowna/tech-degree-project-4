@@ -6,16 +6,16 @@
    */
 .form {
 	 @include flexy($dir:column);
+	 @media (min-width: $break-m) {
+	 	.btn--default.theme__colors {
+        margin: 0;
+        padding: 1em 0;
+        }
+	 }
 }
 .form__label--hidden {
 	display: none;
 }
 .form__input {
 	@include form;
-
-}
-//media queries
-@media (min-width: $break-m){
-
-
 }

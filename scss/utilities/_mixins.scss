@@ -11,10 +11,34 @@
 @mixin btn {
     border: none;
     @include roundy;
-    
     color: $white;
     display: block;
     width: 100%;
+    display: block;
+    width: 100%;
+    margin-bottom: 1.3em;
+    text-transform: uppercase;
+}
+@mixin pictureFrame {
+	display: block;
+	margin: auto;
+	width: 80%;
+	padding: .5em;
+	border: 3px solid $white;
+	 -webkit-box-shadow: 0px 0px 0px 1px rgba(205,205,205,0.75);
+    -moz-box-shadow: 0px 0px 0px 1px rgba(205,205,205,0.75);
+    box-shadow: 0px 0px 0px 1px rgba(205,205,205,0.75);
+}
+@mixin avatar {
+	display: block;
+	text-align: center;
+	margin: auto;
+	width: 60%;
+	padding: 2em;
+	@media (min-width: $break-m){
+	text-align: center;
+	margin: auto;
+	}	
 }
 @mixin form {
 	border: 0;
@@ -41,24 +65,16 @@ $just: null) {
 
 // media queries
 @mixin mq($break) {
-	@if $break == 'xs' {
-	@media (max-width: $break-xs){
-	@content
+	$value: map-get($breakpoints, $break);
+	$sm: map-get($breakpoints, 'sm');
+	@if $value < $sm {
+		@media (max-width: $value){
+			@content;
+		}
 	}
-	} @else if $break == 'sm' {
-	@media (min-width: $break-s){
-	@content
-	}
-	
-	} @else if $break == 'med' {
-	@media (min-width: $break-m){
-	@content
-	}
-	
-	} @else if $break == 'lg' {
-	@media (min-width: $break-lg){
-	@content
-	}
-	
+ @else {
+		@media (min-width: $value){
+			@content;
+		}
 	}
 }

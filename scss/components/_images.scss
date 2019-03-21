@@ -6,38 +6,15 @@
 .img--logo {
 	margin-top: 2.25em;
 	margin-bottom: 2.25em;
+	@media (min-width: $break-m){
+	margin: 0;
+	padding: 0;
+	}
 }
 .img--avatar {
-	display: block;
-	text-align: center;
-	margin: auto;
-	width: 60%;
-	padding: 2em;
-	
+	@include avatar;
 }
 
 .img--frame {
-	display: block;
-	margin: auto;
-	width: 80%;
-	padding: .5em;
-	border: 3px solid $white;
-	 -webkit-box-shadow: 0px 0px 0px 1px rgba(205,205,205,0.75);
-    -moz-box-shadow: 0px 0px 0px 1px rgba(205,205,205,0.75);
-    box-shadow: 0px 0px 0px 1px rgba(205,205,205,0.75);
+	@include pictureFrame;
 }
-//media queries
-
-@media (min-width: $break-m){
-	.img--logo {
-		margin: 0;
-		padding: 0;
-		
-	}
-	.img--avatar {
-	text-align: center;
-	margin: auto;
-	
-	
-}
-	}
