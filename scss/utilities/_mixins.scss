@@ -69,4 +69,17 @@ $just: null) {
 	flex-wrap: $wrap;
 	justify-content: $just;
 }
-
+//Mixins
+////////////////////////////////////////////////////
+@mixin mq($break) {
+	@if $break == "small" {
+	@media (min-width: $break-xs) and (max-width: $break-m) {
+	@content; 
+	}
+  }
+  @else if $break == "medium" {
+  	@media(min-width: $break-m + 1) {
+  		@content
+  	}
+  }
+}
