@@ -4,8 +4,7 @@
     padding: 0;
     text-align: center;
    @include mq(medium){
-    display: flex;
-    justify-content: space-around;
+    @include flexy($dir:row,$just:space-around);
     margin-top: 15px;
     }
 }
