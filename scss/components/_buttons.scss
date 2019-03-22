@@ -38,7 +38,7 @@
    
 }
 
-@media (min-width: $break-m){
+@include mq(medium){
     .btn--default.theme__colors,
     .btn--success.theme__colors,
     .btn--error.theme__colors,

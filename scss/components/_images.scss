@@ -6,7 +6,7 @@
 .img--logo {
 	margin-top: 2.25em;
 	margin-bottom: 2.25em;
-	@media (min-width: $break-m){
+	@include mq(medium){
 	margin: 0;
 	padding: 0;
 	}

@@ -39,7 +39,7 @@
     
 }
 //media queries
-@media (min-width: $break-m){
+@include mq(medium){
  .grid__col--8 .card {
    padding-right: 50px;
    

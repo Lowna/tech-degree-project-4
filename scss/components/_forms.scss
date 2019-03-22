@@ -6,7 +6,7 @@
    */
 .form {
 	 @include flexy($dir:column);
-	 @media (min-width: $break-m) {
+	 @include mq(medium) {
 	 	.btn--default.theme__colors {
         margin: 0;
         padding: 1em 0;
