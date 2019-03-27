@@ -183,6 +183,180 @@ select {
 }
 
 /* Scss Document */
+.theme__colors .grid__col {
+  text-align: center;
+}
+
+.theme__colors.grid__col--3 {
+  background-color: #deb2ee;
+}
+
+.theme__colors.grid__col--4 {
+  background-color: #7ee6fd;
+}
+
+.theme__colors.grid__col--5 {
+  background-color: #88d9a0;
+}
+
+.theme__colors.grid__col--6 {
+  background-color: #3fabca;
+}
+
+.theme__colors.grid__col--7 {
+  background-color: #ec9fa3;
+}
+
+.theme__colors.grid__col--8 {
+  background-color: #fd9f85;
+}
+
+.theme__colors.grid__col--12 {
+  background-color: #80e8d1;
+}
+
+.grid__row {
+  padding: 1em 10px;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 769px) {
+  .grid__row {
+    display: flex;
+    flex-direction: row;
+  }
+}
+.grid__col--1 {
+  margin-top: 10px;
+  flex-basis: 100%;
+}
+@media (min-width: 769px) {
+  .grid__col--1 {
+    margin-top: 0;
+    flex-basis: 8.3333333333%;
+  }
+}
+.grid__col--2 {
+  margin-top: 10px;
+  flex-basis: 100%;
+}
+@media (min-width: 769px) {
+  .grid__col--2 {
+    margin-top: 0;
+    flex-basis: 16.6666666667%;
+  }
+}
+.grid__col--3 {
+  margin-top: 10px;
+  flex-basis: 100%;
+}
+@media (min-width: 769px) {
+  .grid__col--3 {
+    margin-top: 0;
+    flex-basis: 25%;
+  }
+}
+.grid__col--4 {
+  margin-top: 10px;
+  flex-basis: 100%;
+}
+@media (min-width: 769px) {
+  .grid__col--4 {
+    margin-top: 0;
+    flex-basis: 33.3333333333%;
+  }
+}
+.grid__col--5 {
+  margin-top: 10px;
+  flex-basis: 100%;
+}
+@media (min-width: 769px) {
+  .grid__col--5 {
+    margin-top: 0;
+    flex-basis: 41.6666666667%;
+  }
+}
+.grid__col--6 {
+  margin-top: 10px;
+  flex-basis: 100%;
+}
+@media (min-width: 769px) {
+  .grid__col--6 {
+    margin-top: 0;
+    flex-basis: 50%;
+  }
+}
+.grid__col--7 {
+  margin-top: 10px;
+  flex-basis: 100%;
+}
+@media (min-width: 769px) {
+  .grid__col--7 {
+    margin-top: 0;
+    flex-basis: 58.3333333333%;
+  }
+}
+.grid__col--8 {
+  margin-top: 10px;
+  flex-basis: 100%;
+}
+@media (min-width: 769px) {
+  .grid__col--8 {
+    margin-top: 0;
+    flex-basis: 66.6666666667%;
+  }
+}
+.grid__col--9 {
+  margin-top: 10px;
+  flex-basis: 100%;
+}
+@media (min-width: 769px) {
+  .grid__col--9 {
+    margin-top: 0;
+    flex-basis: 75%;
+  }
+}
+.grid__col--10 {
+  margin-top: 10px;
+  flex-basis: 100%;
+}
+@media (min-width: 769px) {
+  .grid__col--10 {
+    margin-top: 0;
+    flex-basis: 83.3333333333%;
+  }
+}
+.grid__col--11 {
+  margin-top: 10px;
+  flex-basis: 100%;
+}
+@media (min-width: 769px) {
+  .grid__col--11 {
+    margin-top: 0;
+    flex-basis: 91.6666666667%;
+  }
+}
+.grid__col--12 {
+  margin-top: 10px;
+  flex-basis: 100%;
+}
+@media (min-width: 769px) {
+  .grid__col--12 {
+    margin-top: 0;
+    flex-basis: 100%;
+  }
+}
+
+@media (min-width: 769px) {
+  [class^=grid__col] + [class^=grid__col] {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-left: 10px;
+  }
+}
+
+/* Scss Document */
 .nav {
   margin: 0;
   padding: 0;
@@ -192,7 +366,7 @@ select {
   .nav {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     margin-top: 15px;
   }
 }
@@ -219,238 +393,6 @@ select {
   border-radius: 5px;
 }
 
-/* Scss Document */
-/*
- Grid:
-    .container
-    .grid__row
-    .grid__col--2
-    .grid__col--3
-    .grid__col--4
-    .grid__col--5
-    .grid__col--6
-    .grid__col--7
-    .grid__col--8
-    .grid__col--9
-    .grid__col--10
-    .grid__col--11
-    .grid__col--12
-    .centered
-    .theme__colors
-
-// grid colors
-$grid__col--3: #deb2ee;
-$grid__col--4: #7ee6fd;
-$grid__col--5: #88d9a0;
-$grid__col--6: #3fabca;
-$grid__col--7: #ec9fa3;
-$grid__col--8: #fd9f85;
-$grid__col--12: #80e8d1;
-*/
-.container {
-  display: flex;
-  flex-direction: column;
-  width: 90%;
-  margin: 0 auto;
-}
-
-.grid__row {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: left;
-  margin-bottom: 1.75em;
-}
-@media (min-width: 769px) {
-  .grid__row {
-    display: flex;
-    flex-direction: row;
-    margin-top: 1em;
-  }
-}
-
-@media (min-width: 769px) {
-  .grid__col--1 {
-    margin-right: 10px !important;
-  }
-}
-
-@media (min-width: 769px) {
-  .grid__col--2 {
-    margin-right: 10px !important;
-  }
-}
-
-@media (min-width: 769px) {
-  .grid__col--3 {
-    margin-right: 10px !important;
-  }
-}
-
-@media (min-width: 769px) {
-  .grid__col--4 {
-    margin-right: 10px !important;
-  }
-}
-
-@media (min-width: 769px) {
-  .grid__col--5 {
-    margin-right: 10px !important;
-  }
-}
-
-@media (min-width: 769px) {
-  .grid__col--6 {
-    margin-right: 10px !important;
-  }
-}
-
-@media (min-width: 769px) {
-  .grid__col--7 {
-    margin-right: 10px !important;
-  }
-}
-
-@media (min-width: 769px) {
-  .grid__col--8 {
-    margin-right: 10px !important;
-  }
-}
-
-@media (min-width: 769px) {
-  .grid__col--9 {
-    margin-right: 10px !important;
-  }
-}
-
-@media (min-width: 769px) {
-  .grid__col--10 {
-    margin-right: 10px !important;
-  }
-}
-
-@media (min-width: 769px) {
-  .grid__col--11 {
-    margin-right: 10px !important;
-  }
-}
-
-@media (min-width: 769px) {
-  .grid__col--12 {
-    margin-right: 10px !important;
-  }
-}
-
-.grid__col--3 {
-  margin: auto;
-}
-@media (min-width: 769px) {
-  .grid__col--3 {
-    flex-basis: 50%;
-  }
-}
-
-.theme__colors {
-  padding: 0.5em;
-  margin-bottom: 6px;
-  border-radius: 5px;
-}
-
-.theme__colors.grid__col--3 {
-  background-color: #deb2ee;
-  margin: 0;
-  margin-bottom: 6px;
-}
-
-.theme__colors.grid__col--4 {
-  background-color: #7ee6fd;
-}
-@media (min-width: 769px) {
-  .theme__colors.grid__col--4 {
-    flex-basis: 75%;
-  }
-}
-
-.theme__colors.grid__col--5 {
-  background-color: #88d9a0;
-}
-@media (min-width: 769px) {
-  .theme__colors.grid__col--5 {
-    flex-basis: 35%;
-  }
-}
-
-.theme__colors.grid__col--6 {
-  background-color: #3fabca;
-}
-@media (min-width: 769px) {
-  .theme__colors.grid__col--6 {
-    flex-basis: 50%;
-  }
-}
-
-.theme__colors.grid__col--7 {
-  background-color: #ec9fa3;
-}
-@media (min-width: 769px) {
-  .theme__colors.grid__col--7 {
-    flex-basis: 65%;
-  }
-}
-
-.theme__colors.grid__col--8 {
-  background-color: #fd9f85;
-}
-@media (min-width: 769px) {
-  .theme__colors.grid__col--8 {
-    flex-basis: 75%;
-  }
-}
-
-.theme__colors.grid__col--12 {
-  background-color: #80e8d1;
-}
-@media (min-width: 769px) {
-  .theme__colors.grid__col--12 {
-    flex-basis: 100%;
-  }
-}
-
-@media (min-width: 769px) {
-  .grid__col--12 {
-    display: flex;
-    flex-direction: column;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-  }
-
-  .grid__col--4 {
-    flex-basis: 33.3333333333%;
-  }
-
-  .grid__col--6 {
-    flex-basis: 50%;
-  }
-  .grid__col--6 .img--avatar {
-    width: 40%;
-    padding: 1em;
-  }
-
-  .grid__col--8 {
-    flex-basis: 66%;
-  }
-}
-@media (min-width: 769px) and (min-width: 769px) {
-  .grid__col--8 {
-    padding-right: 50px;
-  }
-}
-@media (min-width: 769px) {
-  .grid__col--9 {
-    flex-basis: 60%;
-  }
-}
 .btn--default,
 .btn--success,
 .btn--error,
@@ -462,8 +404,8 @@ $grid__col--12: #80e8d1;
   display: block;
   width: 100%;
   display: block;
-  width: 100%;
-  margin-bottom: 1.3em;
+  padding: 1em;
+  margin-bottom: 20px;
   text-transform: uppercase;
 }
 
@@ -511,7 +453,6 @@ $grid__col--12: #80e8d1;
     margin: auto;
     margin-left: 20px;
     padding: 1em 50px;
-    width: 100%;
   }
 
   .form .btn--default.theme__colors {
@@ -549,7 +490,6 @@ $grid__col--12: #80e8d1;
   margin-bottom: 30px;
   padding-bottom: 30px;
   font-weight: 700;
-  width: 95%;
 }
 
 /* Scss Document */
@@ -560,7 +500,7 @@ $grid__col--12: #80e8d1;
 @media (min-width: 769px) {
   .img--logo {
     margin: 0;
-    padding: 0;
+    padding-left: 2em;
   }
 }
 
@@ -568,7 +508,6 @@ $grid__col--12: #80e8d1;
   display: block;
   text-align: center;
   margin: auto;
-  width: 60%;
   padding: 2em;
 }
 @media (min-width: 768px) {
@@ -581,7 +520,6 @@ $grid__col--12: #80e8d1;
 .img--frame {
   display: block;
   margin: auto;
-  width: 80%;
   padding: 0.5em;
   border: 3px solid #fff;
   -webkit-box-shadow: 0px 0px 0px 1px rgba(205, 205, 205, 0.75);

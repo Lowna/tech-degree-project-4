@@ -1,5 +1,3 @@
-/* Scss Document */
-ccd
 // **********************************************
 // _grid.scss
 // styles related to the grid system and
@@ -7,45 +5,22 @@ ccd
 // major grid styles have been added here for you
 // but additional styling may be needed
 // **********************************************
-.container {}
-.theme__colors .grid__col {
-  text-align: center;
-}
-.theme__colors.grid__col--3 {
-  background-color: $grid__col--3;
-}
-.theme__colors.grid__col--4 {
-  background-color: $grid__col--4;
-}
-.theme__colors.grid__col--5 {
-  background-color: $grid__col--5;
-}
-.theme__colors.grid__col--6 {
-  background-color: $grid__col--6;
-}
-.theme__colors.grid__col--7 {
-  background-color: $grid__col--7;
-}
-.theme__colors.grid__col--8 {
-  background-color: $grid__col--8;
-}
-.theme__colors.grid__col--12 {
-  background-color: $grid__col--12;
-}
+
 
 // grid base class
 .grid {
+
   // .grid__row
   &__row {
     padding: 1em 10px;
-    @include flexy($dir:column);
+    display: flex;
+    flex-direction: column;
 
-    @include mq(medium) {
-      @include flexy($dir:row);
-		
+    // NOTE: replace with media query mixin if aiming for exceeds
+    @media (min-width: 768px) {
+      flex-direction: row;
     }
   }
-
 
   // .grid__col
   &__col {
@@ -65,7 +40,7 @@ ccd
         flex-basis: 100%;
 
         // NOTE: replace with media query mixin if aiming for exceeds
-        @include mq(medium) {
+        @media (min-width: 768px) {
 
           // base stlyes applied to all grid columns
           margin-top: 0;
@@ -82,14 +57,12 @@ ccd
 [class^=grid__col] {
   // grid__col + grid__col, targets two sibling columns
   & + & {
-    @include mq(medium) {
- 	@include center;
+
+    // NOTE: replace with media query mixin if aiming for exceeds
+    @media (min-width: 768px) {
+
       // add grid gutter
       margin-left: 10px;
     }
   }
 }
-
-
-
-

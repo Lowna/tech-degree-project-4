@@ -4,7 +4,7 @@
     padding: 0;
     text-align: center;
    @include mq(medium){
-    @include flexy($dir:row,$just:space-around);
+    @include flexy($dir:row,$just:center);
     margin-top: 15px;
     }
 }
