@@ -20,6 +20,8 @@
     margin-bottom: 20px;
     text-transform: uppercase;
 }
+
+
 //for images and avatars
 ////////////////////////////////////////////////////
 @mixin pictureFrame {
@@ -66,7 +68,7 @@ $just: null) {
 	flex-wrap: $wrap;
 	justify-content: $just;
 }
-//Mixins
+//breakpoints
 ////////////////////////////////////////////////////
 @mixin mq($break) {
 	@if $break == "small" {

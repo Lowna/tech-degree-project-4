@@ -6,6 +6,18 @@
 .btn--info {
     @include btn;
 }
+@each $type, $color in $btn-colors {
+    .btn--#{$type} {
+        background-color: $color;
+    }
+}
+@each $type, $color-hover in $btn-colors-hover {
+    .btn--#{$type}:hover {
+        background-color: $color-hover;
+    }
+}
+
+/*
 .btn--default {
     background: $btn-default;
     &:hover {
@@ -37,6 +49,7 @@
     }
    
 }
+*/
 
 @include mq(medium){
     .btn--default.theme__colors,

@@ -493,40 +493,78 @@ ccd .theme__colors {
 }
 
 .btn--default {
-  background: #51ddfc;
-}
-.btn--default:hover {
-  background-color: #fc7051;
+  background-color: #51ddfc;
 }
 
 .btn--success {
-  background: #63cc82;
-}
-.btn--success:hover {
-  background-color: #cc63ad;
+  background-color: #63cc82;
 }
 
 .btn--error {
-  background: #e4757a;
-}
-.btn--error:hover {
-  background-color: #75e4df;
+  background-color: #e4757a;
 }
 
 .btn--warning {
-  background: #fd7856;
-}
-.btn--warning:hover {
-  background-color: #56dbfd;
+  background-color: #fd7856;
 }
 
 .btn--info {
-  background: #927bc1;
+  background-color: #927bc1;
 }
-.btn--info:hover {
+
+.btn--default-comp:hover {
+  background-color: #fc7051;
+}
+
+.btn--success-comp:hover {
+  background-color: #cc63ad;
+}
+
+.btn--error-comp:hover {
+  background-color: #75e4df;
+}
+
+.btn--warning-comp:hover {
+  background-color: #56dbfd;
+}
+
+.btn--info-comp:hover {
   background-color: #aac17b;
 }
 
+/*
+.btn--default {
+    background: $btn-default;
+    &:hover {
+    background-color: $btn-default-comp;
+    }
+}
+.btn--success {
+    background: $btn-success;
+     &:hover {
+    background-color: $btn-success-comp;
+    }
+}
+.btn--error {
+    background: $btn-error;
+     &:hover {
+    background-color: $btn-error-comp;
+    }
+}
+.btn--warning {
+    background: $btn-warning;
+     &:hover {
+    background-color: $btn-warning-comp;
+    }
+}
+.btn--info {
+    background: $btn-info;
+     &:hover {
+    background-color: $btn-info-comp;
+    }
+   
+}
+*/
 @media (min-width: 769px) {
   .btn--default.theme__colors,
 .btn--success.theme__colors,
