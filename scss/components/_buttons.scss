@@ -17,40 +17,6 @@
     }
 }
 
-/*
-.btn--default {
-    background: $btn-default;
-    &:hover {
-    background-color: $btn-default-comp;
-    }
-}
-.btn--success {
-    background: $btn-success;
-     &:hover {
-    background-color: $btn-success-comp;
-    }
-}
-.btn--error {
-    background: $btn-error;
-     &:hover {
-    background-color: $btn-error-comp;
-    }
-}
-.btn--warning {
-    background: $btn-warning;
-     &:hover {
-    background-color: $btn-warning-comp;
-    }
-}
-.btn--info {
-    background: $btn-info;
-     &:hover {
-    background-color: $btn-info-comp;
-    }
-   
-}
-*/
-
 @include mq(medium){
     .btn--default.theme__colors,
     .btn--success.theme__colors,

@@ -11,16 +11,6 @@ $link-color: #52ddfc;
 $blockquote: #808080;
 
 //button colors
-$btn-default: #51ddfc;
-$btn-default-comp: complement($btn-default);
-$btn-success: #63cc82;
-$btn-success-comp: complement($btn-success);
-$btn-error: #e4757a;
-$btn-error-comp: complement($btn-error);
-$btn-warning: #fd7856;
-$btn-warning-comp: complement($btn-warning);
-$btn-info: #927bc1;
-$btn-info-comp: complement($btn-info);
 
 $btn-colors: (
 	'default': #51ddfc,
@@ -30,14 +20,15 @@ $btn-colors: (
 	'info': #927bc1,
 );
 $btn-colors-hover: (
-	'default-comp': complement(#51ddfc),
-	'success-comp': complement(#63cc82),
-	'error-comp': complement(#e4757a),
-	'warning-comp': complement(#fd7856),
-	'info-comp': complement(#927bc1),
+	'default': complement(#51ddfc),
+	'success': complement(#63cc82),
+	'error': complement(#e4757a),
+	'warning': complement(#fd7856),
+	'info': complement(#927bc1),
 );
 
 // grid colors
+
 $grid__col--3: #deb2ee;
 $grid__col--4: #7ee6fd;
 $grid__col--5: #88d9a0;
