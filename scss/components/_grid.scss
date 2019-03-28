@@ -15,36 +15,70 @@ ccd
   background-color: $grid__col--3;
   padding: .5em;
   @include roundy;
+  @include flexy($just:left);
+  @include mq(medium) {
+      @include flexy($just:center);
+    
+    }
 }
 .theme__colors.grid__col--4 {
   background-color: $grid__col--4;
   padding: .5em;
   @include roundy;
+  @include mq(medium) {
+      @include flexy($just:center);
+    
+    }
 }
 .theme__colors.grid__col--5 {
   background-color: $grid__col--5;
   padding: .5em;
   @include roundy;
+  @include mq(medium) {
+      @include flexy($just:center);
+    
+    }
 }
 .theme__colors.grid__col--6 {
   background-color: $grid__col--6;
   padding: .5em;
   @include roundy;
+  @include mq(medium) {
+      @include flexy($just:center);
+    
+    }
 }
 .theme__colors.grid__col--7 {
   background-color: $grid__col--7;
   padding: .5em;
   @include roundy;
+  @include mq(medium) {
+      @include flexy($just:center);
+    
+    }
+}
+.theme__colors.grid__col--7.centered {
+   @include mq(medium) {
+   margin: 0 auto;
+   }
 }
 .theme__colors.grid__col--8 {
   background-color: $grid__col--8;
   padding: .5em;
   @include roundy;
+  @include mq(medium) {
+      @include flexy($just:center);
+    
+    }
 }
 .theme__colors.grid__col--12 {
   background-color: $grid__col--12;
   padding: .5em;
   @include roundy;
+  @include mq(medium) {
+      @include flexy($just:center);
+    
+    }
 }
 
 
@@ -110,6 +144,9 @@ ccd
       @include flexy($dir:row);
     
     }
+}
+.grid__col--3 {
+  @include flexy($just:center);
 }
 
 .container {
