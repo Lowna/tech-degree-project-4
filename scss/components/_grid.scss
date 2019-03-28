@@ -7,31 +7,46 @@ ccd
 // major grid styles have been added here for you
 // but additional styling may be needed
 // **********************************************
-.container {}
-.theme__colors .grid__col {
-  text-align: center;
+
+.theme__colors {
+  padding: 1em;
 }
 .theme__colors.grid__col--3 {
   background-color: $grid__col--3;
+  padding: .5em;
+  @include roundy;
 }
 .theme__colors.grid__col--4 {
   background-color: $grid__col--4;
+  padding: .5em;
+  @include roundy;
 }
 .theme__colors.grid__col--5 {
   background-color: $grid__col--5;
+  padding: .5em;
+  @include roundy;
 }
 .theme__colors.grid__col--6 {
   background-color: $grid__col--6;
+  padding: .5em;
+  @include roundy;
 }
 .theme__colors.grid__col--7 {
   background-color: $grid__col--7;
+  padding: .5em;
+  @include roundy;
 }
 .theme__colors.grid__col--8 {
   background-color: $grid__col--8;
+  padding: .5em;
+  @include roundy;
 }
 .theme__colors.grid__col--12 {
   background-color: $grid__col--12;
+  padding: .5em;
+  @include roundy;
 }
+
 
 // grid base class
 .grid {
@@ -90,6 +105,17 @@ ccd
   }
 }
 
+.grid__col--12 {
+  @include mq(medium) {
+      @include flexy($dir:row);
+    
+    }
+}
 
-
+.container {
+   @include mq(medium){
+    max-width: $max-width;
+    margin: 0 auto;
+   }
+}
 

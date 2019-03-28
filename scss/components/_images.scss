@@ -11,6 +11,9 @@
 	padding-left: 2em;
 	}
 }
+.grid__col--3.img--logo {
+	margin: 0 auto;
+}
 .img--avatar {
 	@include avatar;
 }
